@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Chat with Screen Sharing</title>
+    <style>
+      /* Стили для отображения ошибок */
+      #error-message {
+        color: red;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
     <h1>Video Chat with Screen Sharing</h1>
@@ -12,6 +20,8 @@
     <button id="share-screen">Share Screen</button>
     <div id="screen-share"></div>
     <!-- Для отображения экрана другого пользователя -->
+    <div id="error-message"></div>
+    <!-- Элемент для отображения ошибок -->
 
     <!-- Подключаем socket.io с сервера -->
     <script src="/socket.io/socket.io.js"></script>
