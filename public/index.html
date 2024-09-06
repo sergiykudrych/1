@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Chat with Screen Sharing</title>
+  </head>
+  <body>
+    <h1>Video Chat with Screen Sharing</h1>
+    <video id="local-video" autoplay muted></video>
+    <div id="remote-videos"></div>
+    <button id="share-screen">Share Screen</button>
+
+    <!-- Подключаем socket.io с сервера -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Подключаем JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
