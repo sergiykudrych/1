@@ -75,5 +75,5 @@ if (navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia) {
 
   shareScreenButton.onclick = shareScreen;
 } else {
-  displayError('Screen sharing is not supported in your browser.');
+  displayError('Screen sharing is not supported on your device or browser.');
 }
